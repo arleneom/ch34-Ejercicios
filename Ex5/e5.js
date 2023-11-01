@@ -12,10 +12,14 @@ At the end of the exercise, there should be 4 people in the array.
 */
 const people = ["Maria", "Dani", "Luis", "Juan", "Camila"];
 
-console.log( `All the people on my list is: ${people}`);
+function printOutList( arr ) { 
+    return arr.join(", ");  
+   }
+  
+let list = printOutList(people);
+console.log( `All the people on my list is: ${list}`);
 
-
-people.splice( 1, 1 );
+people.splice(1,1);
 console.log( `List without Dani: ${people}`); 
 
 
@@ -30,9 +34,9 @@ console.log(`Luis at the beginning: ${people}`);
 people.push( "Arlene" );
 console.log( `My name on the list: ${people}` );
 
-for (let index = 0; index < people.length; index ++){
-    console.log( people[index]);
-    if (people[index].toLowerCase() === "maria");       
+for (let index = 0; index < people.length -1; index ++){
+    if (people[index] === "Maria");       
+    console.log(people[index]);
     {break;} 
 }
 
