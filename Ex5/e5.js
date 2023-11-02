@@ -35,9 +35,10 @@ people.push( "Arlene" );
 console.log( `My name on the list: ${people}` );
 
 for (let index = 0; index < people.length -1; index ++){
-    if (people[index] === "Maria");       
     console.log(people[index]);
-    {break;} 
+    if (people[index] === "Maria"){
+        break;
+    } 
 }
 
 console.log( "Maria is located as the: " + people.indexOf( "Maria" ) );
